@@ -1,0 +1,152 @@
+{
+  "balance_sheet_tags": {
+    "total_assets": [
+      "Assets",
+      "AssetsNet",
+      "AssetsTotal",
+      "Asset",
+      "AssetsAndOtherDebits"
+    ],
+    "current_assets": [
+      "AssetsCurrent",
+      "CurrentAssets",
+      "CurrentAssetsAndOtherDebits"
+    ],
+    "cash": [
+      "CashAndCashEquivalentsAtCarryingValue",
+      "CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents",
+      "CashAndCashEquivalentsPeriodIncreaseDecrease",
+      "Cash"
+    ],
+    "short_term_investments": [
+      "ShortTermInvestments",
+      "AvailableForSaleSecuritiesCurrent",
+      "MarketableSecuritiesCurrent",
+      "ShortTermInvestmentsAvailableForSale"
+    ],
+    "accounts_receivable": [
+      "AccountsReceivableNetCurrent",
+      "ReceivablesNetCurrent",
+      "AccountsNotesAndLoansReceivableNetCurrent",
+      "TradeAccountsReceivableNetCurrent"
+    ],
+    "inventory": [
+      "InventoryNet",
+      "InventoriesNet",
+      "InventoryFinishedGoods",
+      "InventoryAndOtherCurrentAssets"
+    ],
+    "total_liabilities": [
+      "Liabilities",
+      "LiabilitiesAndStockholdersEquity",
+      "LiabilitiesAndPartnersCapital",
+      "LiabilitiesTotal"
+    ],
+    "current_liabilities": [
+      "LiabilitiesCurrent",
+      "CurrentLiabilities",
+      "LiabilitiesCurrentAndLongTerm",
+      "ShortTermBorrowings"
+    ],
+    "stockholders_equity": [
+      "StockholdersEquity",
+      "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest",
+      "PartnersCapital",
+      "MemberEquity",
+      "TotalEquity"
+    ],
+    "retained_earnings": [
+      "RetainedEarningsAccumulatedDeficit",
+      "AccumulatedDeficit",
+      "RetainedEarnings",
+      "Deficit"
+    ],
+    "capital_expenditures": [
+      "PaymentsToAcquirePropertyPlantAndEquipment",
+      "CapitalExpenditures",
+      "PurchaseOfPropertyAndEquipment",
+      "PropertyPlantAndEquipmentAdditions",
+      "PropertyPlantAndEquipmentNet"
+    ]
+  },
+  "income_statement_tags": {
+    "revenue": [
+      "Revenues",
+      "SalesRevenueNet",
+      "RevenueFromContractWithCustomerExcludingAssessedTax",
+      "SalesRevenueGoodsNet",
+      "TotalRevenue"
+    ],
+    "cost_of_goods_sold": [
+      "CostOfRevenue",
+      "CostOfGoodsAndServicesSold",
+      "CostOfSales",
+      "CostOfGoodsSold"
+    ],
+    "gross_profit": [
+      "GrossProfit",
+      "GrossMargin",
+      "GrossIncome",
+      "OperatingRevenueLessCostOfRevenue"
+    ],
+    "operating_income": [
+      "OperatingIncomeLoss",
+      "IncomeLossFromOperations",
+      "IncomeFromOperations",
+      "OperatingProfitLoss"
+    ],
+    "operating_expenses": [
+      "OperatingExpenses",
+      "CostsAndExpenses",
+      "SellingGeneralAndAdministrativeExpense",
+      "ResearchAndDevelopmentExpense",
+      "SellingGeneralAndAdministrativeAndResearchAndDevelopmentExpenses"
+    ],
+    "interest_expense": [
+      "InterestExpense",
+      "InterestAndDebtExpense",
+      "InterestExpenseDebt",
+      "InterestIncomeExpenseNet"
+    ],
+    "net_income": [
+      "IncomeLossFromContinuingOperationsIncludingPortionAttributableToNoncontrollingInterest",
+      "NetIncomeLoss",
+      "ProfitLoss",
+      "NetIncome"
+    ],
+    "earnings_per_share": [
+      "EarningsPerShareBasic",
+      "EarningsPerShareDiluted",
+      "EarningsPerShareBasicAndDiluted",
+      "NetIncomeLossPerShareBasic"
+    ]
+  },
+  "cashflow_tags": {
+    "operating_cf": [
+      "NetCashProvidedByUsedInOperatingActivities",
+      "NetCashProvidedByUsedInOperatingActivitiesContinuingOperations",
+      "CashFlowsFromUsedInOperatingActivities",
+      "NetCashProvidedByOperatingActivities"
+    ],
+    "investing_cf": [
+      "NetCashProvidedByUsedInInvestingActivities",
+      "CashFlowsFromUsedInInvestingActivities",
+      "NetCashUsedForInvestingActivities"
+    ],
+    "financing_cf": [
+      "NetCashProvidedByUsedInFinancingActivities",
+      "CashFlowsFromUsedInFinancingActivities",
+      "NetCashProvidedByFinancingActivities"
+    ],
+    "free_cf": [
+      "FreeCashFlow",
+      "NetCashProvidedByOperatingActivitiesLessCapitalExpenditures"
+    ],
+    "depreciation": [
+      "DepreciationDepletionAndAmortization",
+      "Depreciation",
+      "DepreciationAndAmortization",
+      "DepreciationAmortizationAndAccretionNet"
+    ]
+  }
+}
