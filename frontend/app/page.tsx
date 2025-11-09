@@ -8,6 +8,9 @@ import { ExportTable } from "@/components/output-table"
 import { Alert, AlertDescription } from "@/components/ui/alert"
 import { AlertCircle } from "lucide-react"
 
+// API URL from environment variable
+const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'
+
 export interface CompanyAnalysis {
   ticker: string
   cik: string
@@ -95,7 +98,7 @@ export default function Home() {
     let successCount = 0
     for (const ticker of newTickers) {
       try {
-        const response = await fetch('http://localhost:8000/analyze', {
+        const response = await fetch(`${API_URL}/analyze`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
