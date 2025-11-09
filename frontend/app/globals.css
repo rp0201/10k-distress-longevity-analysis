@@ -120,12 +120,10 @@
     @apply bg-background text-foreground;
   }
   
-  /* Hide scrollbar completely */
   ::-webkit-scrollbar {
     display: none;
   }
   
-  /* For Firefox */
   * {
     scrollbar-width: none;
   }
