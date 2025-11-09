@@ -1,12 +1,8 @@
 # 10-K Financial Distress Analysis
 
-> 🚀 **Open Source** | Automated financial distress scoring using SEC 10-K filings
-
 Comprehensive financial analysis tool that calculates a composite risk score (0-100) based on 11 financial metrics including Ohlson O-Score, liquidity ratios, leverage, profitability, and cash flow analysis.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/rp0201/10k-distress-longevity-analysis)
-
-## 🎯 Features
+## Features
 
 - **Composite Distress Score**: 0-100 scale with letter grades (A-F)
 - **11 Financial Metrics**: Comprehensive analysis including Ohlson O-Score, growth rates, and ratios
@@ -14,10 +10,9 @@ Comprehensive financial analysis tool that calculates a composite risk score (0-
 - **Real-time Analysis**: Instant results from SEC EDGAR API
 - **Data Quality Warnings**: Automatic alerts for stale or outdated data
 - **Persistent Storage**: Save your analyses across sessions
-- **Responsive Design**: Works on desktop and mobile devices
 - **Open Source**: MIT licensed, contributions welcome
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - Python 3.8+
@@ -52,18 +47,18 @@ npm run dev
 # Open http://localhost:3000
 ```
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 10k-distress-longevity-analysis/
 ├── backend/              # Python FastAPI analysis engine
 │   ├── src/             # Core modules
 │   │   ├── data/        # SEC API client
-│   │   ├── parsers/     # XBRL parsing
+│   │   ├── parsers/     # Parser
 │   │   ├── models/      # Bankruptcy models
 │   │   ├── features/    # Financial metrics
 │   │   └── scoring/     # Composite scoring
-│   ├── config/          # Alternative XBRL tags
+│   ├── config/          # Alternative tags
 │   ├── main.py          # FastAPI application
 │   └── requirements.txt
 ├── frontend/            # Next.js web application
@@ -79,7 +74,7 @@ npm run dev
 └── README.md           # This file
 ```
 
-## 📊 Scoring System
+## Scoring System
 
 ### Composite Score (0-100, lower is better)
 | Grade | Range | Risk Level | Action |
@@ -106,7 +101,7 @@ npm run dev
 | Return on Assets | 5% | Asset efficiency |
 | Net Profit Margin | 5% | Profitability |
 
-## 🏗️ Tech Stack
+## Tech Stack
 
 ### Backend
 - **Framework**: FastAPI
@@ -124,7 +119,7 @@ npm run dev
 - **Notifications**: Sonner (Toast)
 - **State**: React Hooks + localStorage
 
-## 🚀 Deployment
+## Deployment
 
 ### Frontend (Vercel) - Recommended
 
@@ -142,7 +137,7 @@ npm run dev
 3. **Configure Environment Variables**
    - Add `NEXT_PUBLIC_API_URL` with your backend URL
 
-4. **Deploy!** 🎉
+4. **Deploy!** 
 
 ### Backend Options
 
@@ -184,7 +179,7 @@ SEC_USER_AGENT="Your Name your.email@example.com"
 NEXT_PUBLIC_API_URL=https://your-backend-url.com
 ```
 
-## 📖 Usage Examples
+## Usage Examples
 
 ### Web Interface
 1. Navigate to http://localhost:3000
@@ -217,7 +212,7 @@ curl -X POST http://localhost:8000/analyze \
 }
 ```
 
-## ⚠️ Known Limitations
+## Known Limitations
 
 ### SEC API Data Quality
 - **Stale Data**: Company Facts API may contain 5-15 year old data
@@ -228,7 +223,6 @@ curl -X POST http://localhost:8000/analyze \
 The system automatically detects and excludes:
 - Banks & financial institutions (different balance sheet structure)
 - Insurance companies
-- REITs (Real Estate Investment Trusts)
 - Investment companies
 
 ### Analysis Constraints
@@ -236,49 +230,7 @@ The system automatically detects and excludes:
 - **No Qualitative Factors**: Doesn't account for management quality, brand value, or industry disruption
 - **Uniform Thresholds**: Same scoring applied across all industries (some variation is natural)
 
-## 🤝 Contributing
-
-We welcome contributions! This is an open-source project under the MIT license.
-
-### How to Contribute
-
-1. **Fork the repository**
-2. **Create a feature branch**
-   ```bash
-   git checkout -b feature/amazing-feature
-   ```
-3. **Make your changes**
-   - Add features or fix bugs
-   - Write/update tests if applicable
-   - Update documentation
-4. **Commit your changes**
-   ```bash
-   git commit -m 'Add amazing feature'
-   ```
-5. **Push to your fork**
-   ```bash
-   git push origin feature/amazing-feature
-   ```
-6. **Open a Pull Request**
-
-### Development Guidelines
-- Follow existing code style and conventions
-- Test your changes locally (both frontend and backend)
-- Update README/docs for new features
-- Keep commits atomic and well-described
-
-### Ideas for Contributions
-- 📊 Additional financial metrics or models
-- 🎨 UI/UX improvements
-- 📱 Mobile app version
-- 📈 Data visualization enhancements
-- 🔍 Better XBRL tag coverage
-- 🌍 International market support
-- 📄 Export features (PDF, CSV, Excel)
-- 🔔 Watchlist and alerts
-- 📊 Company comparison views
-
-## � License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
@@ -290,7 +242,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ❌ Liability  
 ❌ Warranty  
 
-## ⚖️ Disclaimer
+## Disclaimer
 
 **IMPORTANT**: This tool is provided for educational and informational purposes only. It should **NOT** be construed as investment advice.
 
@@ -299,44 +251,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Verify all data with official SEC filings
 - Past performance does not guarantee future results
 - The scores are algorithmic assessments and may not accurately predict future performance or bankruptcy risk
-
-## 🙏 Acknowledgments
-
-- **SEC EDGAR**: Data provided by the U.S. Securities and Exchange Commission
-- **shadcn/ui**: Beautiful UI components
-- **Vercel**: Hosting and deployment platform
-- **FastAPI**: Modern Python web framework
-- **Next.js**: React framework for production
-
-## 📬 Contact & Support
-
-- **Issues**: [GitHub Issues](https://github.com/rp0201/10k-distress-longevity-analysis/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/rp0201/10k-distress-longevity-analysis/discussions)
-- **Documentation**: See `backend/README.md` and `frontend/README.md`
-
-## 🗺️ Roadmap
-
-### Planned Features
-- [ ] Historical score tracking and trends
-- [ ] Peer comparison analysis
-- [ ] Industry-specific scoring adjustments
-- [ ] Automated watchlist monitoring
-- [ ] Email/SMS alerts for score changes
-- [ ] Export to PDF/Excel
-- [ ] API rate limiting and authentication
-- [ ] Batch upload via CSV
-- [ ] Interactive charts and visualizations
-- [ ] Machine learning model improvements
-
-### In Progress
-- [x] Basic web interface
-- [x] Multi-company analysis
-- [x] Data persistence
-- [x] Mobile responsiveness
-- [x] Deployment configuration
-
----
-
-Made with ❤️ for the open source community
-
-**Star ⭐ this repo if you find it useful!**
